@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{font-size: 75px;}
+        button{font-size: 50px;}
+        @keyframes anim1{
+            0%{background-color: blue;}
+            25%{background-color: greenyellow;}
+            50%{background-color: purple;}
+            100%{background-color: yellow;}
+        }
+        body{animation-name: anim1;
+        animation-duration: 15s;
+    animation-iteration-count: infinite;}
+
+    @keyframes anim2{
+        from{font-size:120px ;}
+        to{font-size: 75;}
+    }
+
+    h1{animation-name: anim2;
+    animation-duration: 10s;
+animation-iteration-count: infinite;}
+
+img{height: 500px;
+    width: 700px;
+border-radius: 20px;}
+
+button{width: 25%;
+height: 10%;
+font-size: 30px;
+color: royalblue;
+border-radius: 10px;
+box-shadow: 2px 2px grey;
+transition: all;
+transition-duration: 1s;}
+
+button:hover{transform: scale(1.1);}
+
+    </style>
+    <script>
+     function correct()
+     {
+       alert("Well done this is correct");  
+     }
+     function incorrect()
+     {
+         alert("sorry this is incorrect better luck next time")
+     }
+     </script> 
+</head>
+<body>
+    <center>
+<h1>Science Quiz</h1>
+<img src="https://lh3.googleusercontent.com/yfcmrnYWUcGX_eMz31ui2nPLiXqA_iFapDVS8rm6J3aCU3WzPS_J1DI4U2495B292TA" alt="Welcome">
+<br>
+<br>
+<h2>
+Q.1 what do male animals reproduce?
+</h2>
+<button onclick="correct();"> sperm </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> egg </button>
+<br>
+<br>
+<button onclick="incorrect();"> egg-shell </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> sperm-shell </button>
+
+<h2>Q.2 which tooth is the sharpest?</h2>
+
+<button onclick="incorrect();"> incisors </button>&nbsp;&nbsp;
+<button onclick="correct();"> canine </button>
+<br>
+<br>
+<button onclick="incorrect();"> molars </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> pre-molars </button>
+
+<h2>Q.3 is freezing chocolate a reversible change?</h2>
+
+<button onclick="incorrect();"> no </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> sometimes </button>
+<br>
+<br>
+<button onclick="incorrect();"> 75% </button>&nbsp;&nbsp;
+<button onclick="correct();"> yes </button>
+
+<h2>Q.4 is rust a rust reverible change?</h2>
+
+<button onclick="correct();"> little </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> no </button>
+<br>
+<br>
+<button onclick="incorrect();"> yes </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> not sure </button>
+</center>
+</body>
+</html>

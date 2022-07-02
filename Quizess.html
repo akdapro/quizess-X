@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzez X</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5692/5692030.png" type="image/x-icon">
+    <style>
+        table{width: 100%;}
+        a{text-decoration: none;
+        color: lightblue;
+    font-size: 25px;}
+    a:link{text-decoration: none;}
+    a:visited{text-decoration: none;}
+    a:active{text-decoration: none;}
+    a:hover{text-decoration: none;
+    color: royalblue;
+font-size: 30px;}
+#div1{}
+h1{text-align: center;
+font-size: 70px;
+color: blue;
+padding: 80px;}
+
+body{animation-name: anim1;
+animation-duration: 15s;
+animation-iteration-count: infinite;}
+
+@keyframes anim1{
+    0%{background-color: greenyellow;}
+    25%{background-color: red;}
+    50%{background-color: orange;}
+    75%{background-color: yellow;}
+    100%{background-color: purple;}
+}
+button{font-size: 40px;}
+
+    </style>
+    <script>
+        function askname()
+            {
+                let person=prompt("please enter your name to start the quiz");
+             if(person !=null)
+             {
+                 document.getElementById("h21").innerHTML="HELLO " + person + " GOOD LUCK FOR YOUR QUIZ";
+             }
+            }
+    </script>
+</head>
+<body>
+  
+    <div id="div1">
+        <h1>
+            Quizzez X
+            </h1>  
+    <table>
+        <tr>
+            <th>
+                <img src="https://cdn-icons-png.flaticon.com/512/5692/5692030.png" alt="taking a little longer than usual to load" style="border-radius: 100px;
+                height: 50px; width: 70px;">
+            </th>
+            <th>
+                 <a href="Quizess.html">Home</a>
+            </th>
+            <th>
+                <a href="Maths.html">Math Quiz</a>
+            </th>
+            <th>
+                <a href="sience.html">Science Quiz</a>
+            </th>
+            <th>
+                <a href="history.html">History Quiz</a>
+            </th>
+        </tr>
+    </table>
+      
+    </div>
+    <div id="div2">
+<h1 style="text-align: center;">
+    About us
+</h1>
+<p style="font-size: 25px;
+text-align: center;">
+    Quizess X is a website where you can test your knowledge about subjects you can try timing yourself to try to increase your speed at math or sience or history ext... Enjoy.
+</p>
+<br>
+<br>
+<center>
+    <button onclick="askname()">
+        Register for X websites
+    </button>
+<h2 id="h21">
+
+</h2>
+</center>
+    </div>
+</body>
+</html>

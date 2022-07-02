@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{font-size: 75px;}
+        button{font-size: 50px;}
+        @keyframes anim1{
+            0%{background-color: blue;}
+            25%{background-color: greenyellow;}
+            50%{background-color: purple;}
+            100%{background-color: yellow;}
+        }
+        body{animation-name: anim1;
+        animation-duration: 15s;
+    animation-iteration-count: infinite;}
+
+    @keyframes anim2{
+        from{font-size:120px ;}
+        to{font-size: 75;}
+    }
+
+    h1{animation-name: anim2;
+    animation-duration: 10s;
+animation-iteration-count: infinite;}
+
+img{height: 500px;
+    width: 700px;
+border-radius: 20px;}
+
+button{width: 25%;
+height: 10%;
+font-size: 30px;
+color: royalblue;
+border-radius: 10px;
+box-shadow: 2px 2px grey;
+transition: all;
+transition-duration: 1s;}
+
+button:hover{transform: scale(1.1);}
+
+    </style>
+    <script>
+     function correct()
+     {
+       alert("Well done this is correct");  
+     }
+     function incorrect()
+     {
+         alert("sorry this is incorrect better luck next time")
+     }
+     </script> 
+</head>
+<body>
+    <center>
+<h1>Math Quiz</h1>
+<img src="https://img.freepik.com/free-vector/realistic-math-chalkboard-background_23-2148163817.jpg?w=2000" alt="Welcome">
+<br>
+<br>
+<h2>
+Q.1 What is 785-234=?
+</h2>
+<button onclick="correct();"> 551 </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> 541 </button>
+<br>
+<br>
+<button onclick="incorrect();"> 561 </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> 451 </button>
+
+<h2>Q.2 What is 24 X 5 = ?</h2>
+
+<button onclick="incorrect();"> 125 </button>&nbsp;&nbsp;
+<button onclick="correct();"> 120 </button>
+<br>
+<br>
+<button onclick="incorrect();"> 124 </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> 130 </button>
+
+<h2>Q.3 what is ? + 2x = 39 (find the value of ?)</h2>
+
+<button onclick="incorrect();"> 15 </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> 12 </button>
+<br>
+<br>
+<button onclick="incorrect();"> 11 </button>&nbsp;&nbsp;
+<button onclick="correct();"> 13 </button>
+
+<h2>Q.4 (problem solving) I am thinking of a number. if you add it the second number has to be double the first exg: do x + 2x = 27 (find the value of x)</h2>
+
+<button onclick="correct();"> 9 </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> 7 </button>
+<br>
+<br>
+<button onclick="incorrect();"> 9.5 </button>&nbsp;&nbsp;
+<button onclick="incorrect();"> 8 </button>
+</center>
+</body>
+</html>
